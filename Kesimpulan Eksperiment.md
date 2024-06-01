@@ -57,7 +57,9 @@ Hyperparameter tuning pada model K-Nearest Neighbors (KNN) meningkatkan kinerja 
  
 _Jelaskan bagaimana peningkatan performa model dari metrics yang kalian gunakan pada berbagai percobaan yang telah kalian lakukan._
 
+Dari tiga percobaan yang dilakukan dengan model K-Nearest Neighbors (KNN), terdapat variasi dalam kinerja model seperti yang ditunjukkan oleh metrik evaluasi. Percobaan pertama memiliki akurasi sebesar 20.48%, presisi 20.49%, recall 20.48%, dan F1-Score 19.65%. Percobaan kedua menunjukkan peningkatan sedikit dengan akurasi 22.62%, presisi 21.61%, recall 22.62%, dan F1-Score 20.32%. Sedangkan pada percobaan ketiga, terjadi peningkatan lebih signifikan dengan akurasi 25.80%, presisi 19.95%, recall 25.80%, dan F1-Score 19.93%.
 
+Dapat disimpulkan bahwa, percobaan ketiga menunjukkan kinerja yang paling baik dengan akurasi 25.80%, presisi 19.95%, recall 25.80%, dan F1-Score 19.93%. Meskipun masih terdapat ruang untuk perbaikan, percobaan ketiga memiliki performa yang sedikit lebih baik dibandingkan dengan percobaan pertama dan kedua.
 
 _Catatan:_
 
