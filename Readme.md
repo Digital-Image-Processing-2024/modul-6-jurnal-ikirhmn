@@ -30,13 +30,7 @@ Alasan Penggunaan Teknik Rotasi
 
 _Dari setiap percobaan yang telah kalian lakukan, jelaskan bagaimana cara kalian menemukan preprocessing yang paling tepat. Jelaskan alasan kalian menggunakan teknik tersebut dan berikan alasan mengapa preprocessing diperlukan._
 
-Setelah mengevaluasi hasil dari setiap teknik, saya menemukan bahwa Median Filtering adalah teknik preprocessing yang paling tepat untuk dataset ini. Berikut adalah alasan kami memilih teknik tersebut:
-- Pengurangan Noise
-  Median filtering secara efektif mengurangi noise pada gambar tanpa mengaburkan detail penting, yang sangat penting untuk gambar jari yang mengandung banyak detail halus.
-- Kualitas Visual
-  Gambar hasil median filtering memiliki kualitas visual yang lebih baik dengan tepi dan detail yang jelas. Ini penting untuk tugas klasifikasi yang mengandalkan fitur visual yang jelas.
-- Distribusi Piksel
-  Meskipun histogram dari median filtering tidak setersebar ekualisasi histogram, hasil visual menunjukkan bahwa detail penting tetap terjaga, yang lebih kritis untuk akurasi model klasifikasi.
+Setelah mengevaluasi hasil dari setiap teknik, saya menemukan bahwa pada percobaan 4 dengan menggabungkan thresholding dan deteksi tepi, kita memastikan bahwa gambar yang digunakan untuk analisis dan modeling memiliki kualitas yang baik, dengan fitur yang lebih jelas dan terdefinisi, sehingga meningkatkan kinerja dan akurasi model secara keseluruhan.
 
 ### Feature Selection
 
@@ -57,9 +51,12 @@ Hyperparameter tuning pada model K-Nearest Neighbors (KNN) meningkatkan kinerja 
  
 _Jelaskan bagaimana peningkatan performa model dari metrics yang kalian gunakan pada berbagai percobaan yang telah kalian lakukan._
 
-Dari tiga percobaan yang dilakukan dengan model K-Nearest Neighbors (KNN), terdapat variasi dalam kinerja model seperti yang ditunjukkan oleh metrik evaluasi. Percobaan pertama memiliki akurasi sebesar 20.48%, presisi 20.49%, recall 20.48%, dan F1-Score 19.65%. Percobaan kedua menunjukkan peningkatan sedikit dengan akurasi 22.62%, presisi 21.61%, recall 22.62%, dan F1-Score 20.32%. Sedangkan pada percobaan ketiga, terjadi peningkatan lebih signifikan dengan akurasi 25.80%, presisi 19.95%, recall 25.80%, dan F1-Score 19.93%.
+Dari percobaan 1 hingga 3, model KNN menunjukkan kinerja yang konsisten rendah, dengan akurasi berkisar antara 20.48% hingga 25.80%, presisi antara 19.95% hingga 21.61%, recall antara 20.48% hingga 25.80%, dan F1-Score antara 19.65% hingga 20.32%. Kinerja yang rendah ini menunjukkan bahwa model KNN memiliki kesulitan dalam mengklasifikasikan data dengan baik, cenderung memberikan banyak false positive dan gagal mendeteksi sampel positif yang sebenarnya.
 
-Dapat disimpulkan bahwa, percobaan ketiga menunjukkan kinerja yang paling baik dengan akurasi 25.80%, presisi 19.95%, recall 25.80%, dan F1-Score 19.93%. Meskipun masih terdapat ruang untuk perbaikan, percobaan ketiga memiliki performa yang sedikit lebih baik dibandingkan dengan percobaan pertama dan kedua.
+Namun, pada percobaan 4, model menunjukkan kinerja yang sempurna dengan akurasi, presisi, recall, dan F1-Score semuanya mencapai 100%. Hal ini menandakan bahwa model mampu mengklasifikasikan semua sampel dengan benar pada dataset ini. Ini bisa disebabkan oleh beberapa faktor, seperti dataset yang sangat kecil dan mungkin tidak mencerminkan variasi yang lebih besar, atau kemungkinan data yang sangat terstruktur dengan baik.
+
+Kesimpulannya, sementara percobaan 1 hingga 3 menunjukkan performa yang perlu ditingkatkan, percobaan 4 menunjukkan hasil yang ideal, yang mungkin memerlukan analisis lebih lanjut untuk memastikan bahwa hasil tersebut dapat diandalkan dan tidak overfitting.
+
 
 _Catatan:_
 
